@@ -23,6 +23,15 @@ pm2 start ./ --name notion_bot # Launch bot
 pm2 l # List of launched apps
 pm2 delete notion_bot # Delete process of launched bot
 ```
+### Formating emails to single string
+You can make on single line of emails from gathering emails
+```bash
+cat ./src/input.txt' | python3 -c "import sys; homka = ','.join([x.split('] ')[1].split(' ')[2][:-1] for x in sys.stdin]); print(); print(homka)"
+```
+After that you'll string with format:
+```bash
+example@gmail.com,example2@gmail.com,homka@yahoo.com,vacman@email.email
+```
 
 ### License
 Do whatever you want, but don't present this bot as a product for Ilya Zelenchuk 
