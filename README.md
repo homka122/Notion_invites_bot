@@ -1,5 +1,5 @@
 ### Notion invites bot
-Bot for illegal gathering emails and messages from user and keeping it in txt files in src folder
+Bot for illegal gathering emails and messages from users and keeping it in txt files
 
 ### Getting Started
 1) Enter your token in src/index.ts file instead off `TOKEN` string
